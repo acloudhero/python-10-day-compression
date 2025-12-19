@@ -15,7 +15,7 @@ Each day contains a dedicated folder with one or more executable scripts coverin
 
 ## Progress Log
 - **Day 1:** Python runtime, types, and basic arithmetic  
-- **Day 2:** Control flow and decision-making logic (in progress)
+- **Day 2:** Control flow and explicit decision boundaries
 
 ## Notes
 - All scripts are intended to be run directly via the command line
