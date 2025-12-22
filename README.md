@@ -17,7 +17,22 @@ Each day contains a dedicated folder with one or more executable scripts coverin
 - **Day 1:** Python runtime, types, and basic arithmetic  
 - **Day 2:** Control flow and explicit decision boundaries
 - **Day 3:** Loops and iteration boundaries
-- ## Day 4 – Functions and Reuse
+- **Day 4:** Functions and Reuse
+- **Day 5:** Mini Program: Rules-Driven Access Checker
+    **Focus:**
+- Functions with parameters and return values
+- While loops and program state
+- Translating rules into conditional logic
+
+**Built:**
+- An interactive access checker that evaluates access level based on role and environment
+- Persistent run counter across multiple checks
+- Graceful exit handling with summary output
+
+**Notes:**
+- Initial implementation uses explicit conditional logic
+- Will refactor to a data-driven rules model in a future iteration
+
 - Defined reusable functions with parameters
 - Used return values to pass data back to the program
 - Combined functions with conditional logic
