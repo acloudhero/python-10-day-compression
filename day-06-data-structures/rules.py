@@ -21,12 +21,15 @@ def main():
 
     while True:
         role = input("Enter role (admin/user/guest or quit): ")
+        role = role.lower()
         if role == "quit":
             print("Total checks performed:", runs)
             print("Exiting.")
             break
 
         environment = input("Enter environment (prod/dev): ")
+        environment = environment.lower()
+
 
         access = get_access_level(role, environment)
         print("Access level:", access)
