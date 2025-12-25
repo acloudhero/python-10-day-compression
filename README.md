@@ -121,8 +121,22 @@ This version serves as a **baseline implementation**.
 - Fewer lines of code
 - Significantly easier to extend and reason about
 
-Day 6 represents the first major design leap:  
-moving from *“it works”* to *“it scales.”*
+### **Day 7 — Lists, Aggregation, and Rule Evaluation at Scale**
+
+**Focus**
+- Lists as collections of inputs
+- Evaluating rules across multiple cases
+- Aggregating outcomes instead of handling one input at a time
+
+**Built**
+- A batch rules evaluator that applies existing access logic across a list of requests
+- A summary report that aggregates access outcomes by type
+
+**Key Concepts**
+- Separation of rules (data) from execution
+- Reusing functions without modifying logic
+- Deterministic evaluation across collections
+- Moving from interactive programs to batch-style execution
 
 ---
 
