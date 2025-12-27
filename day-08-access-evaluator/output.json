@@ -1,0 +1,74 @@
+[
+  {
+    "role": "root",
+    "environment": "prod",
+    "access_level": "full access",
+    "valid": true,
+    "reason": "rule matched",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "admin",
+    "environment": "dev",
+    "access_level": "full access",
+    "valid": true,
+    "reason": "rule matched",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "user",
+    "environment": "prod",
+    "access_level": "read-only access",
+    "valid": true,
+    "reason": "rule matched",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "guest",
+    "environment": "prod",
+    "access_level": "read-only access",
+    "valid": true,
+    "reason": "rule matched",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "guest",
+    "environment": "dev",
+    "access_level": "no_access",
+    "valid": false,
+    "reason": "no matching rule",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "admin",
+    "environment": "dev",
+    "access_level": "full access",
+    "valid": true,
+    "reason": "rule matched",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "guest",
+    "environment": "stage",
+    "access_level": "invalid_request",
+    "valid": false,
+    "reason": "invalid environment: stage",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "manager",
+    "environment": "dev",
+    "access_level": "invalid_request",
+    "valid": false,
+    "reason": "invalid role: manager",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  },
+  {
+    "role": "it",
+    "environment": "it",
+    "access_level": "invalid_request",
+    "valid": false,
+    "reason": "invalid role: IT",
+    "timestamp": "2025-12-26T15:27:28.008681"
+  }
+]

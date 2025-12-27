@@ -1,0 +1,27 @@
+[2025-12-26T06:32:16.349981] root -> prod -> full access
+[2025-12-26T06:32:16.349981] admin -> dev -> full access
+[2025-12-26T06:32:16.349981] user -> prod -> read-only access
+[2025-12-26T06:32:16.349981] guest -> prod -> read-only access
+[2025-12-26T06:32:16.349981] guest -> dev -> no_access
+[2025-12-26T06:32:16.349981] ADMIN -> DEV -> full access
+[2025-12-26T07:12:42.589064] root -> prod -> full access
+[2025-12-26T07:12:42.589064] admin -> dev -> full access
+[2025-12-26T07:12:42.589064] user -> prod -> read-only access
+[2025-12-26T07:12:42.589064] guest -> prod -> read-only access
+[2025-12-26T07:12:42.589064] guest -> dev -> no_access
+[2025-12-26T07:12:42.589064] admin -> dev -> full access
+[2025-12-26T09:15:16.014411] root -> prod -> full access
+[2025-12-26T09:15:16.014411] admin -> dev -> full access
+[2025-12-26T09:15:16.014411] user -> prod -> read-only access
+[2025-12-26T09:15:16.014411] guest -> prod -> read-only access
+[2025-12-26T09:15:16.014411] guest -> dev -> no_access
+[2025-12-26T09:15:16.014411] admin -> dev -> full access
+[2025-12-26T15:27:28.008681] root -> prod -> full access
+[2025-12-26T15:27:28.008681] admin -> dev -> full access
+[2025-12-26T15:27:28.008681] user -> prod -> read-only access
+[2025-12-26T15:27:28.008681] guest -> prod -> read-only access
+[2025-12-26T15:27:28.008681] guest -> dev -> no_access
+[2025-12-26T15:27:28.008681] admin -> dev -> full access
+[2025-12-26T15:27:28.008681] guest -> stage -> invalid_request
+[2025-12-26T15:27:28.008681] manager -> dev -> invalid_request
+[2025-12-26T15:27:28.008681] it -> it -> invalid_request
