@@ -121,6 +121,8 @@ This version serves as a **baseline implementation**.
 - Fewer lines of code
 - Significantly easier to extend and reason about
 
+---
+
 ### **Day 7 — Lists, Aggregation, and Rule Evaluation at Scale**
 
 **Focus**
@@ -139,6 +141,55 @@ This version serves as a **baseline implementation**.
 - Moving from interactive programs to batch-style execution
 
 ---
+
+### **Day 8 — Access Evaluator v4 (Validation + JSON + Logging)**
+
+**Focus**
+- Input normalization and validation  
+- Clean separation between validation and rule evaluation  
+- Generating structured JSON output  
+- Writing append-only logs with timestamps  
+- Producing explainable results (reason + valid fields)
+
+**Built**
+- Access Evaluator v4:
+- Validates roles and environments before evaluation  
+- Normalizes user input (case-insensitive handling)  
+- Distinguishes between invalid input, no matching rule, and valid rule matches  
+- Produces a consistent JSON schema for all results  
+- Appends human-readable logs using portable ASCII (`->`)  
+- Includes timestamped audit trails for each evaluation
+
+**Technical Highlights**
+- Introduced input validation using sets for O(1) membership checks  
+- Added normalized input handling (`role_norm`, `env_norm`)  
+- Encapsulated logic into clear branches:
+- `invalid_request`
+- `no_access`
+- rule match  
+- Added `valid` boolean flag for downstream filtering  
+- Added `reason` field for explainability (critical in real-world automation tools)  
+- Implemented UTF-8-safe logging  
+- Ensured consistent JSON output via list of structured dictionaries
+
+**Why This Matters**
+This is the first step where Python moves beyond syntax exercises into
+**production-style automation design**.
+
+Evaluator v4 behaves like a simplified IAM/RBAC policy checker:
+- validates input early,
+- normalizes data,
+- explains decision-making,
+- logs actions,
+- emits machine-readable output.
+
+These skills translate directly to SE work involving Terraform, IAM, CI/CD validation, configuration linting, and log analysis.
+
+**Artifact**
+- `day-08-access-evaluator/`
+- `evaluator_v4.py` — validation engine + JSON + logging  
+- `output.json` — structured evaluation results  
+- `log.txt` — append-only audit log  
 
 ## Notes
 - All scripts are intended to be run directly via the command line
