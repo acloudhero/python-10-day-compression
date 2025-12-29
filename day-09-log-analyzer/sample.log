@@ -1,0 +1,10 @@
+2025-01-14 12:00:01 INFO Starting system check
+2025-01-14 12:00:02 WARN Latency spike detected
+2025-01-14 12:00:03 INFO Running health checks
+2025-01-14 12:00:05 ERROR Database connection failed
+2025-01-14 12:00:06 INFO Retrying connection
+2025-01-14 12:00:07 ERROR Retry failed
+2025-01-14 12:00:09 INFO Recovery flow activated
+2025-01-14 12:00:15 WARN Slow query execution detected
+2025-01-14 12:00:21 ERROR Timeout while querying DB
+2025-01-14 12:00:30 INFO System healthy
