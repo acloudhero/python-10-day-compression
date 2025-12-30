@@ -238,15 +238,57 @@ A Log Analyzer v1 that:
 - Incremental aggregation of statistics  
 - JSON serialization for automation  
 
-**Why This Matters**
-Real systems produce logs, not structured APIs.  
-Day 9 introduces the ability to **transform raw operational logs into actionable, structured data**, a core capability in cloud engineering, SRE, observability, and automation tooling.
-
 **Artifact**
 - `day-09-log-analyzer/`  
   - `analyzer_v1.py`  
   - `sample.log`  
   - `summary.json`  
+
+---
+
+### **Day 10 — CLI Tooling & Program Structure (Log Analyzer v2)**
+
+**Focus**
+- Turning Python scripts into user-facing command-line tools  
+- Handling command-line arguments  
+- Building flexible, composable program entrypoints  
+- Adding filters, flags, and optional behaviors  
+- Strengthening functional boundaries and execution flow  
+
+**Built**
+A **CLI-enhanced Log Analyzer v2** that:
+
+- Accepts a log file path from the command line  
+- Offers optional flags (e.g., `--errors-only`, `--json`, or `--output`)  
+- Reuses the core parsing and summary logic from Day 9  
+- Produces human-readable console output *and* optional machine-readable files  
+- Demonstrates real-world patterns for automation tooling  
+
+**Key Concepts**
+- `argparse` for structured CLI interfaces  
+- Separation of concerns between:
+  - log loading  
+  - log analysis  
+  - CLI orchestration  
+- Designing programs that are:
+  - predictable  
+  - extensible  
+  - debuggable  
+  - reusable  
+
+**Technical Highlights**
+- Implemented a multi-mode CLI with help text and flags  
+- Added filtered output capability (e.g., extracting only `ERROR` lines)  
+- Enabled optional output paths for JSON summaries  
+- Reinforced the value of small, well-focused functions  
+- Demonstrated how to build *composable utilities* rather than monolithic scripts  
+
+**Artifact**
+- `day-10-cli-tool/`  
+  - `logcli.py` — CLI tool using argparse  
+  - `sample.log` — test input  
+  - `errors_only.log`  
+  - `summary.json`- JSON output  
 
 ---
 
